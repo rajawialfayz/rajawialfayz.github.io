@@ -1,68 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rajawi Alfayz</title>
-
-  <style>
-    body{
-      background:#0d0d0d;
-      color:white;
-      font-family:Arial;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      margin:0;
-      text-align:center;
-    }
-
-    .box{
-      max-width:700px;
-    }
-
-    h1{
-      font-size:55px;
-      margin-bottom:10px;
-    }
-
-    p{
-      color:#b3b3b3;
-      font-size:20px;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:25px;
-      padding:12px 24px;
-      border:1px solid white;
-      color:white;
-      text-decoration:none;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      background:white;
-      color:black;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajawi Alfayz | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <div class="box">
-    <h1>Rajawi Alfayz</h1>
+  <div class="dashboard">
 
-    <p>
-      Cybersecurity Graduate focused on SOC Operations,
-      Threat Detection, and Blue Teaming.
-    </p>
+    <aside class="sidebar">
 
-    <a class="btn" href="https://github.com/rajawialfayz">
-      GitHub
-    </a>
+      <h2>RAJAWI</h2>
+      <p>SOC Dashboard</p>
+
+      <nav>
+        <a href="#home">Overview</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </aside>
+
+    <main class="main">
+
+      <section id="home" class="hero">
+
+        <div>
+
+          <p class="tag">Security Operations Center</p>
+
+          <h1>RAJAWI ALFAYZ</h1>
+
+          <p class="subtitle">
+            Cybersecurity Graduate focused on SOC Operations,
+            Threat Detection, Incident Response, and Blue Teaming.
+          </p>
+
+          <div class="buttons">
+
+            <a href="#projects">
+              View Projects
+            </a>
+
+            <a href="#contact" class="outline">
+              Contact Me
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="status-card">
+
+          <h3>Live SOC Status</h3>
+
+          <p>
+            <span></span>
+            Monitoring Active
+          </p>
+
+          <p>
+            Alerts Reviewed:
+            <strong>128</strong>
+          </p>
+
+          <p>
+            Risk Level:
+            <strong>Low</strong>
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="cards">
+
+        <div class="card">
+          <h3>SIEM</h3>
+          <p>
+            Alert triage, investigation, escalation,
+            and reporting.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Threat Detection</h3>
+          <p>
+            Identifying suspicious behavior,
+            malicious activity, and indicators.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Incident Response</h3>
+          <p>
+            Security monitoring, documentation,
+            and response support.
+          </p>
+        </div>
+
+      </section>
+
+      <section id="about" class="panel">
+
+        <h2>About Me</h2>
+
+        <p>
+          I am a cybersecurity graduate with a strong interest
+          in SOC operations, threat monitoring, blue teaming,
+          and security analysis.
+        </p>
+
+      </section>
+
+      <section id="skills" class="panel">
+
+        <h2>Technical Skills</h2>
+
+        <div class="chips">
+
+          <span>SIEM</span>
+          <span>EDR</span>
+          <span>SOAR</span>
+          <span>Threat Intelligence</span>
+          <span>Incident Response</span>
+          <span>Network Security</span>
+          <span>Splunk</span>
+          <span>Linux</span>
+          <span>Windows</span>
+
+        </div>
+
+      </section>
+
+      <section id="certs" class="panel">
+
+        <h2>Certifications</h2>
+
+        <div class="timeline">
+
+          <div>
+            <h3>eJPT</h3>
+            <p>
+              eLearnSecurity Junior Penetration Tester
+            </p>
+          </div>
+
+          <div>
+            <h3>SOC Level 1</h3>
+            <p>
+              Security Operations training and practical labs.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="projects" class="panel">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+          <div>
+
+            <h3>Secure Surf</h3>
+
+            <p>
+              Anti-phishing browser extension designed to detect
+              and block suspicious URLs using blacklist matching,
+              API-based scanning, and risk indicators.
+            </p>
+
+          </div>
+
+          <span>Blue Team Project</span>
+
+        </div>
+
+      </section>
+
+      <section class="logs">
+
+        <h2>Security Logs</h2>
+
+        <div id="logBox"></div>
+
+      </section>
+
+      <section id="contact" class="panel contact">
+
+        <h2>Contact</h2>
+
+        <p>
+          Email: contact@rajawialfayz.com
+        </p>
+
+        <p>
+          GitHub: github.com/rajawialfayz
+        </p>
+
+        <p>
+          LinkedIn: Add your LinkedIn link here
+        </p>
+
+      </section>
+
+    </main>
+
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
